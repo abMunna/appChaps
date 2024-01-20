@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appChaps.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <style>
+        @keyframes slide {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        .logos {
+            overflow: hidden;
+            padding: 60px 0;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .logos:before,
+        .logos:after {
+            position: absolute;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            content: "";
+            z-index: 2;
+        }
+
+        .logos:before {
+            left: 0;
+        }
+
+        .logos:after {
+            right: 0;
+        }
+
+        /* .logos:hover .logos-slide {
+            animation-play-state: paused;
+        } */
+
+        .logos-slide {
+            display: inline-block;
+            animation: 35s slide infinite linear;
+        }
+
+        .logos-slide img {
+            height: 200px;
+            margin: 0 40px;
+        }
+    </style>
+
+
+    <header class="header bg-gradient-to-r from-rose-500 via-purple-500 to-indigo-500">
+        <div class="navbar flex justify-between items-center px-20 py-10">
+            <div class="navbar-logo">
+                <h2 class="font-black text-2xl">appChaps</h2>
+            </div>
+            <div class="navbar-link-list">
+                <ul class="flex gap-x-7 font-bold text-black">
+                    <li><a href=""
+                            class="hover:font-black hover:italic hover:underline hover:underline-offset-8">Home</a></li>
+                    <li><a href=""
+                            class="hover:font-black hover:italic hover:underline hover:underline-offset-8">Services</a>
+                    </li>
+                    <li><a href=""
+                            class="hover:font-black hover:italic hover:underline hover:underline-offset-8">Products</a>
+                    </li>
+                    <li><a href=""
+                            class="hover:font-black hover:italic hover:underline hover:underline-offset-8">Contact</a>
+                    </li>
+                    <li><a href=""
+                            class="hover:font-black hover:italic hover:underline hover:underline-offset-8">Instagram</a>
+                    </li>
+                    <li><a href=""
+                            class="hover:font-black hover:italic hover:underline hover:underline-offset-8">Facebook</a>
+                    </li>
+                    <li><a href="" class="hover:font-black hover:italic hover:underline hover:underline-offset-8">Linked
+                            In</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-black text-white">
+        <section class="section-one py-20">
+            <div class="px-20 grid grid-cols-2">
+                <div class="text-xl">
+                    <p class="text-3xl italic">appChaps</p>
+                    <br>
+                    <p>is an app development team currently leading the world with innovative and distinguished
+                        applications.
+                        <br><br><br>
+                        We are a group dedicated chaps whose sole desire is to make the perfect app for you.
+                    </p>
+                </div>
+                <img src="imgs/i1.webp" alt="IMAGE">
+            </div>
+        </section>
+
+        <section class="section-two py-20">
+            <div class="px-20 grid grid-cols-2">
+                <img src="imgs/i2.jpg" alt="IMAGE">
+                <div>
+                    <h2 class="text-3xl italic">Innovative design & Consistent quality</h2> <br><br><br>
+                    <p>Our apps are downloaded and used by millions of people around the world.</p>
+                    <div>
+                        <!-- Add some user reviews -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-three py-20">
+            <div class="px-20 grid grid-cols-2">
+                <div>
+                    <h2 class="text-3xl italic">Millions of Active Users</h2> <br><br><br>
+                    <p>Our customers consist of millions of active users from all over the world.</p>
+                    <!-- Add some location and random user numbers for these places -->
+                </div>
+                <img src="imgs/i3.jpg" alt="IMAGE">
+            </div>
+        </section>
+
+        <section class="section-four py-20">
+            <div class="px-20">
+                <h2 class="text-3xl italic text-center">Apps that We have Created</h2>
+                <br>
+                <div class="logos">
+                    <div class="logos-slide">
+                        <div class="flex">
+                            <img src="imgs/logo-1.jpg" alt="">
+                            <img src="imgs/logo-2.jpg" alt="">
+                            <img src="imgs/logo-3.png" alt="">
+                            <img src="imgs/logo-4.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>
